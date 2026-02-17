@@ -56,7 +56,7 @@ def merge_close_points_global(flat, min_distance_m=2.0, agreement: int = 1):
             continue
 
         for m in members:
-            lat, lon, _, _ = flat[m]
+            lat, lon = flat[m]
             sum_lat += lat
             sum_lon += lon
         cnt = len(members)

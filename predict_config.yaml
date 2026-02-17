@@ -1,15 +1,10 @@
-#geotiff_dir: predict_tiffs
 geotiff_dir: tiff_files
 boundaries: gaza_boundaries/GazaStrip_MunicipalBoundaries.shp
-# geojson: tents-2025-09-19_150435.geojson
 prewar_gaza: tiff_files/prewar_gaza.tif
-# hdf5: no_labels.h5
 hdf5: no_labels.h5
 loading:
   files:
     - al_maghazi_bureij_20260101_051741_ssc4_u0002_visual_clip.tif
-    # - jabalia_beit_hanoun_20260101_051741_ssc4_u0001_visual_clip.tif
-    # - rafah_khan_yunis_20260101_051741_ssc4_u0003_visual_clip.tif
 processing:
   step: 0.0005
   quality_thresholds:
@@ -20,7 +15,7 @@ prediction:
   save_bounds: true
   input: al_maghazi_bureij_20260101_051741_ssc4_u0002_visual_clip.h5
   output: al_maghazi_bureij_20260101.json
-  model: runs/20260129_084500/best_model.pth
+  model: runs/20260129_084326/best_model.pth
   # Optional sampling configuration
   sample:
     enable: false        # set to false to run on all tiles
