@@ -1,10 +1,10 @@
 [project]
-name = "scrape-fa"
+name = "displacement-tracker"
 version = "0.1.0"
 description = ""
 authors = [{ name = "Karim Alaa El-Din", email = "karim@aedin.dev" }]
 readme = "README.md"
-packages = [{ include = "scrape_fa" }]
+packages = [{ include = "displacement_tracker" }]
 
 [tool.poetry.dependencies]
 python = "^3.10,<3.15"
